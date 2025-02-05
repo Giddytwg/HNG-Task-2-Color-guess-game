@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HNG-Color-Game</title>
+</head>
+<body>
+    <section class="game-body">
+
+        <header>
+            <h1>Color Guess Game</h1>
+            
+            <p data-testid="gameInstructions">Guess the correct color!</p>
+        </header>
+
+        <div class="game-interface">
+            <!-- counters -->
+            <div class="count-cont">
+                <p>Current Score: <span class="score-count" data-testid="score"> 0</span></p>
+            </div>
+
+            <!-- Color Box -->
+            <div class="color-box" data-testid="colorBox">
+                <p data-testid="gameStatus" class="game-status">Guess the target color</p>
+            </div>
+
+            <!-- Color Buttons -->
+            <div class="color-btn-container"></div>
+        </div>
+
+        <button class="reset-button" data-testid="newGameButton">Reset Game</button>
+    </section>
+
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
